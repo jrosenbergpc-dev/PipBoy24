@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pip_Boy_24.APBar">
+    <Grid>
+        <Rectangle BackgroundColor="#002F01" />
+        <Image Source="scan_effect.png" Aspect="Fill" Opacity="0.5" />
+        <Label Text="AP 90/90" TextColor="Lime" FontAutoScalingEnabled="True" FontSize="24" FontAttributes="Bold" FontFamily="Monofonto" HorizontalTextAlignment="End" VerticalTextAlignment="Center" TextType="Text" CharacterSpacing="0.5" Padding="0,0,10,0" />
+    </Grid>
+</ContentView>

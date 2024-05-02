@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pip_Boy_24.NavigationBar">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Image />
+        <Label Text="STAT" Grid.Column="1" TextColor="Lime" FontAutoScalingEnabled="True" FontSize="36" FontAttributes="Bold" FontFamily="Monofonto" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextType="Text" />
+        <Label Text="INV" Grid.Column="2" TextColor="Lime" FontAutoScalingEnabled="True" FontSize="36" FontAttributes="Bold" FontFamily="Monofonto" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextType="Text" />
+        <Label Text="DATA" Grid.Column="3" TextColor="Lime" FontAutoScalingEnabled="True" FontSize="36" FontAttributes="Bold" FontFamily="Monofonto" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextType="Text" />
+        <Label Text="MAP" Grid.Column="4" TextColor="Lime" FontAutoScalingEnabled="True" FontSize="36" FontAttributes="Bold" FontFamily="Monofonto" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextType="Text" />
+        <Label Text="RADIO" Grid.Column="5" TextColor="Lime" FontAutoScalingEnabled="True" FontSize="36" FontAttributes="Bold" FontFamily="Monofonto" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextType="Text" />
+        <Image Grid.Column="6" />
+    </Grid>
+</ContentView>

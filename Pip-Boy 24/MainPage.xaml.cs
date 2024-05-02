@@ -9,16 +9,25 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
+        await Task.Delay(100);
+        ScanLineEffect.IsAnimationPlaying = false;
+        await Task.Delay(100);
+        ScanLineEffect.IsAnimationPlaying = true;
+    }
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+    //private void OnCounterClicked(object sender, EventArgs e)
+    //{
+    //	count++;
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+    //	if (count == 1)
+    //		CounterBtn.Text = $"Clicked {count} time";
+    //	else
+    //		CounterBtn.Text = $"Clicked {count} times";
+
+    //	SemanticScreenReader.Announce(CounterBtn.Text);
+    //}
 }
 
