@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pipboy="clr-namespace:Pip_Boy_24"
              x:Class="Pip_Boy_24.NavigationBar">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -13,11 +14,20 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Image />
-        <Label Text="STAT" Grid.Column="1" TextColor="Lime" FontAutoScalingEnabled="True" FontSize="36" FontAttributes="Bold" FontFamily="Monofonto" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextType="Text" />
-        <Label Text="INV" Grid.Column="2" TextColor="Lime" FontAutoScalingEnabled="True" FontSize="36" FontAttributes="Bold" FontFamily="Monofonto" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextType="Text" />
-        <Label Text="DATA" Grid.Column="3" TextColor="Lime" FontAutoScalingEnabled="True" FontSize="36" FontAttributes="Bold" FontFamily="Monofonto" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextType="Text" />
-        <Label Text="MAP" Grid.Column="4" TextColor="Lime" FontAutoScalingEnabled="True" FontSize="36" FontAttributes="Bold" FontFamily="Monofonto" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextType="Text" />
-        <Label Text="RADIO" Grid.Column="5" TextColor="Lime" FontAutoScalingEnabled="True" FontSize="36" FontAttributes="Bold" FontFamily="Monofonto" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextType="Text" />
+        <pipboy:NavButton x:Name="Nav1" Text="STAT" Grid.Column="1" IsSelected="True" NavButtonSelected="NavSelected" />
+        <pipboy:NavButton x:Name="Nav2" Text="INV" Grid.Column="2" NavButtonSelected="NavSelected" />
+        <pipboy:NavButton x:Name="Nav3" Text="DATA" Grid.Column="3" NavButtonSelected="NavSelected" />
+        <pipboy:NavButton x:Name="Nav4" Text="MAP" Grid.Column="4" NavButtonSelected="NavSelected" />
+        <pipboy:NavButton x:Name="Nav5" Text="RADIO" Grid.Column="5" NavButtonSelected="NavSelected" />
         <Image Grid.Column="6" />
+        <Rectangle BackgroundColor="Lime" HeightRequest="2" VerticalOptions="End" Grid.Column="0" Margin="50,0,0,24" />
+        <Rectangle x:Name="Item1Border" BackgroundColor="Lime" HeightRequest="2" VerticalOptions="End" Grid.Column="1" Margin="0,0,0,24" IsVisible="False" />
+        <Rectangle x:Name="Item2Border" BackgroundColor="Lime" HeightRequest="2" VerticalOptions="End" Grid.Column="2" Margin="0,0,0,24" />
+        <Rectangle x:Name="Item3Border" BackgroundColor="Lime" HeightRequest="2" VerticalOptions="End" Grid.Column="3" Margin="0,0,0,24" />
+        <Rectangle x:Name="Item4Border" BackgroundColor="Lime" HeightRequest="2" VerticalOptions="End" Grid.Column="4" Margin="0,0,0,24" />
+        <Rectangle x:Name="Item5Border" BackgroundColor="Lime" HeightRequest="2" VerticalOptions="End" Grid.Column="5" Margin="0,0,0,24" />
+        <Rectangle x:Name="Item6Border" BackgroundColor="Lime" HeightRequest="2" VerticalOptions="End" Grid.Column="6" Margin="0,0,50,24" />
+        <Rectangle BackgroundColor="Lime" WidthRequest="2" HorizontalOptions="Center" HeightRequest="15" VerticalOptions="End" Grid.Column="0" Margin="0,0,30,10" />
+        <Rectangle BackgroundColor="Lime" WidthRequest="2" HorizontalOptions="End" HeightRequest="15" VerticalOptions="End" Grid.Column="6" Margin="0,0,50,10" />
     </Grid>
 </ContentView>
