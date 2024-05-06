@@ -25,8 +25,8 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <pipboy:NavigationBar Grid.ColumnSpan="8" Margin="180, 0, 180, 0" />
-        <Frame BackgroundColor="Red" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="6" Grid.RowSpan="6" BorderColor="Transparent" CornerRadius="0" />
+        <Frame BackgroundColor="Transparent" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="6" Grid.RowSpan="6" BorderColor="Transparent" CornerRadius="0" />
         <pipboy:FooterBar Grid.Row="7" Grid.ColumnSpan="8" Margin="90, 0, 90, 0" />
-        <Image x:Name="ScanLineEffect" Grid.RowSpan="8" Grid.ColumnSpan="8" Source="scanlines.gif" Opacity="0.05" Aspect="Fill" ZIndex="1" IsAnimationPlaying="True" />
+        <Image x:Name="ScanLineEffect" Grid.RowSpan="8" Grid.ColumnSpan="8" Source="scanlines.gif" Opacity="0.05" Aspect="AspectFill" ZIndex="1" IsAnimationPlaying="True" />
     </Grid>
 </ContentPage>

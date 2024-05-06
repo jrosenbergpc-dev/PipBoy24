@@ -20,7 +20,7 @@
         <pipboy:NavButton x:Name="Nav4" Text="MAP" Grid.Column="4" NavButtonSelected="NavSelected" />
         <pipboy:NavButton x:Name="Nav5" Text="RADIO" Grid.Column="5" NavButtonSelected="NavSelected" />
         <Image Grid.Column="6" />
-        <Rectangle BackgroundColor="Lime" HeightRequest="2" VerticalOptions="End" Grid.Column="0" Margin="50,0,0,24" />
+        <Rectangle BackgroundColor="Lime" HeightRequest="2" VerticalOptions="End" Grid.Column="0" Margin="80,0,0,24" />
         <Rectangle x:Name="Item1Border" BackgroundColor="Lime" HeightRequest="2" VerticalOptions="End" Grid.Column="1" Margin="0,0,0,24" IsVisible="False" />
         <Rectangle x:Name="Item2Border" BackgroundColor="Lime" HeightRequest="2" VerticalOptions="End" Grid.Column="2" Margin="0,0,0,24" />
         <Rectangle x:Name="Item3Border" BackgroundColor="Lime" HeightRequest="2" VerticalOptions="End" Grid.Column="3" Margin="0,0,0,24" />

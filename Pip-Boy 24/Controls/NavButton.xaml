@@ -3,13 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Pip_Boy_24.NavButton">
     <Grid>
-        <Rectangle x:Name="Sel1" BackgroundColor="Lime" HorizontalOptions="Start" WidthRequest="2" HeightRequest="30" VerticalOptions="Start" Margin="0,40,0,0" IsVisible="False"/>
+        <Rectangle x:Name="Sel1" BackgroundColor="Lime" HorizontalOptions="Start" WidthRequest="2" HeightRequest="44" VerticalOptions="End" Margin="0,0,0,24" IsVisible="False"/>
         <Label x:Name="NavLabel" TextColor="Lime" FontAutoScalingEnabled="True" FontSize="36" FontAttributes="Bold" FontFamily="Monofonto" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextType="Text">
             <Label.GestureRecognizers>
                 <TapGestureRecognizer Tapped="OnLabelClicked" />
             </Label.GestureRecognizers>
         </Label>
-        <Rectangle x:Name="Sel2" BackgroundColor="Lime" HorizontalOptions="End" WidthRequest="2" HeightRequest="30" VerticalOptions="Start" Margin="0,40,0,0" IsVisible="False"/>
+        <Rectangle x:Name="Sel2" BackgroundColor="Lime" HorizontalOptions="End" WidthRequest="2" HeightRequest="44" VerticalOptions="End" Margin="0,0,0,24" IsVisible="False"/>
         <Rectangle x:Name="Sel3" BackgroundColor="Lime" HorizontalOptions="Start" WidthRequest="20" HeightRequest="2" VerticalOptions="Center" Margin="0,0,0,12" IsVisible="False" />
         <Rectangle x:Name="Sel4" BackgroundColor="Lime" HorizontalOptions="End" WidthRequest="20" HeightRequest="2" VerticalOptions="Center" Margin="0,0,0,12" IsVisible="False" />
     </Grid>
